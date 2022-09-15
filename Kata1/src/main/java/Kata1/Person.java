@@ -21,7 +21,6 @@ public class Person {
         return birthday;
     }
         
-    
     private long milliSecondsToYear(long milles) {
         return milles / MILLISECONDS_PER_YEAR;
     }
