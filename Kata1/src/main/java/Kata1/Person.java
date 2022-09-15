@@ -2,7 +2,6 @@ package Kata1;
 
 import java.util.Date;
 
-
 public class Person {
         private final String name;
         private final Date birthday;
