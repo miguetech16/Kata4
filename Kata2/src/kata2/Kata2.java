@@ -18,10 +18,9 @@ public class Kata2 {
                 map.put(data[i], 1);
         }
     }
-        Iterator<Map.Entry<Integer, Integer>> entries = map.entrySet().iterator();
-        while (entries.hasNext()) {
-            Map.Entry<Integer, Integer> entry = entries.next();
-            System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());
+        for (Integer key : map.keySet()) {
+            Integer value = map.get(key);
+            System.out.println("Key " + key + ", Value = " + value);
         }
     }
 }
