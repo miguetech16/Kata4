@@ -19,11 +19,11 @@ public class Histogram<T> {
     public Map getHistogram(){
         Map<T, Integer> histogram = new HashMap<T, Integer>();
         for (T key : data) {
-            if (histogram.containsKey(data[(int)key])) {
+            if (histogram.containsKey(key)) {
                 histogram.put(key, histogram.containsKey(key) ? histogram.get(key) + 1 : 1);
                 
             } else {
-                histogram.put(data[(int)key], 1);
+                histogram.put(key, 1);
             }
     }
         return histogram;
